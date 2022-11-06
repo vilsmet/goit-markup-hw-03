@@ -6,6 +6,7 @@
   --accent2-color: #ffffff;
   --button-color: #F5F4FA;
   --background-color: #2F303A;
+  --button-active: #188CE8;
 }
 
 /* Global*/
@@ -25,6 +26,17 @@ body {
   text-decoration: none;
 }
 
+.page-header {
+
+}
+.main-nav {
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+
 /* Logo*/
 .logo-common {
   text-decoration: none;
@@ -43,9 +55,23 @@ body {
   color: #2196f3;
   text-decoration: none;
 }
+.site-nav {
+  display: flex;
+}
+/*.site-nav .item + .item {
+  margin-left: 40px;
+}
+*/
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
+
+}
+
 
 /* Site navigation*/
 .site-nav .link {
+  display: block;
+  padding: 32px 0px;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -56,6 +82,10 @@ body {
 .site-nav .link-gray {
   color: var(--secondary-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link.current {
   color: var(--accent1-color)
@@ -67,7 +97,13 @@ body {
   color: var(--accent1-color);
 }
 
-
+.address-nav {
+  display: flex;
+}
+.address-nav .item:not(:last-child) {
+  margin-right: 50px;
+  display: block;
+}
 
 /* Hero*/
 .hero {
@@ -77,7 +113,6 @@ body {
 
 }
 .hero-title {
-  min-width: 700px;
   color: var(--accent2-color);
   text-transform: uppercase;
   margin-top: 0px;
@@ -107,6 +142,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14px;
+  text-transform: uppercase;
 }
 .feature-list .description {
   color: var(--secondary-text-color);
@@ -116,6 +152,10 @@ body {
 .staff {
   background-color: var(--button-color);
   padding: 10px 0px;
+}
+.staff .member {
+  background-color: var(--accent2-color);
+  padding-bottom: 5px;
 }
 
 .team .title {
@@ -138,12 +178,16 @@ body {
   background-color: var(--accent1-color);
   border-radius: 4px;
   padding: 10px 32px;
-  text-align: center;
-  border 1px solid var(--accent1-color);
-  border-color: var(--accent1-color);
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+}
+.button-blue:hover,
+.button-blue:focus {
+  background-color: var(--button-active);
 }
 .button-gray {
   cursor: pointer;
