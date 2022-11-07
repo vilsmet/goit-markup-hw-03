@@ -20,15 +20,18 @@ html {
 }
 
 
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--accent2-color);
   letter-spacing: 0.03em;
   margin: 0;
-
 }
 
+.bug {
+  background-color: red;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -37,13 +40,13 @@ body {
 .nodecoration {
   text-decoration: none;
 }
-
-
-
 .container {
   width: 1170px;
-  padding: 0px 15px;
   margin: 0 auto;
+
+}
+.margin {
+  justify-content: center;
 }
 .container-nav {
   align-items: center;
@@ -121,8 +124,6 @@ body {
 
 .address-nav {
   display: flex;
-
- 
 }
 .address-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -135,13 +136,13 @@ body {
   background-color: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-bottom: 94px;
  }
 .global {
   align-items: center;
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 
@@ -154,16 +155,15 @@ body {
   font-size: 44px;
   line-height: 1.36;
 }
-.main {
 
-}
 
 /* Section */
 
 .arrange {
   display: flex;
-  padding: 94px 0px 118px;
-  background-color: #2196f3;
+}
+.wrap {
+  flex-wrap: wrap;
 }
 .section-title {
   color: var(--primary-text-color);
@@ -172,7 +172,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: aqua;
+  margin-bottom: 50px;
 
 }
 .section-title-invisible {
@@ -183,8 +183,9 @@ body {
 /* Features*/
 .feature-list {
   display: flex;
+  margin-bottom: 94px;
 
-  padding: 94px 15px 118px;
+
 }
 .feature-list .item:not(:last-child) {
     margin-right: 30px;
@@ -212,12 +213,16 @@ body {
 
 .staff {
   background-color: var(--button-color);
-  padding: 0px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
 }
 .staff .member {
   background-color: var(--accent2-color);
   padding-bottom: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
 }
 .our-tam {
         align-items: center;
@@ -230,17 +235,23 @@ body {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
+
 }
 .staff .title {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .staff .position {
   color: var(--secondary-text-color)
   font-size: 16px;
   line-height: 1.19px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 /* Button*/
@@ -319,6 +330,18 @@ body {
   font-size: 16px;
   line-height: 1.88;
 }
-
+.images:nth-child(3n + 1) {
+  margin-right: 30px;
+}
+.images:nth-child(3n + 2) {
+  margin-right: 30px;
+}
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+.filter {
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
 
 
