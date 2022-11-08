@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,27 +17,25 @@
 
 <body>
     <!--Header-->
-    <header class="container">
-        <div class="site-nav container-nav">
+    <header class="container flex-right center">
             <a href="" class="logo-common logo-black"><span class="logo-highlight">Web</span>Studio</a>
-            <nav class="site-nav">
-              <ul class="site-nav list">
+            <nav class="flex-right">
+              <ul class="flex-right list">
                 <li class="item"><a href="" class="link current">Студія</a></li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
                 <li class="item"><a href="" class="link">Контакти</a></li>
               </ul>
             </nav>
             <!--Contacts-->
-            <ul class="address-nav list">
+            <ul class="flex list">
                 <li class="item"><a href="mailto:info@devstudio.com" class="link-gray">info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+380961111111" class="link-gray">+38 096 111 11 11</a></li>
             </ul>
-        </div>
     </header>
 
     <!--Main Block-->
     <main class="main">
-      <div class="global">
+      <div>
         <section class="hero">
             <h1 class="hero-title">Ефективні рішення для <br /> вашого бізнесу</h1>
             <button class="button-blue" type="button">
@@ -73,7 +72,7 @@
         <div>
         <section class="section activity">
             <h2 class="section-title">Чим ми займаємося</h2>
-            <ul class="list arrange container">
+            <ul class="list flex container">
                 <li class="item"><img src="images/a1.jpg" alt="HTML code typing" width="370"></li>
                 <li class="item"><img src="images/a2.jpg" alt="Page stylization" width="370"></li>
                 <li class="item"><img src="images/a3.jpg" alt="Color palette" width="370"></li>
@@ -84,7 +83,7 @@
     <div>
         <section class="section staff">
             <h2 class="section-title">Наша команда</h2>
-            <ul class="list arrange container">
+            <ul class="list flex container">
                 <li class="member">
                     <img src="images/a4.jpg" alt="Photo of Igor Demyanenko" width="270" class="image">
                     <h3 class="title">Ігор Дем'яненко</h3>
@@ -111,16 +110,16 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-        <div class="container">
-        <a href="" class="logo-common logo-white"><span class="logo-highlight">Web</span>Studio</a>
+      <div class="container vertical">
+        <a href="" class="logo-common logo-white logo"><span class="logo-highlight">Web</span>Studio</a>
         <address>
-            <p class="street">м. Київ пр-т Лесі Українки, 26</p>
+            <p class="street item">м. Київ пр-т Лесі Українки, 26</p>
             <ul class="list">
-                <li><a href="mailto:info@devstudio.com" class="address-contact">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a></li>
+                <li class="item"><a href="mailto:info@devstudio.com" class="address-contact">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a></li>
             </ul>
         </address>
-        </div>
+      </div>
     </footer>
 </body>
 
