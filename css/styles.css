@@ -194,7 +194,7 @@ body {
   /* padding: 15px; */
 }
 .staff .item {
-    flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 .port .item {
   flex-basis: calc((100% - 60px) / 3);
